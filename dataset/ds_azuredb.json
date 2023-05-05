@@ -1,0 +1,45 @@
+{
+	"name": "ds_azuredb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqldb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "location",
+				"type": "varchar"
+			},
+			{
+				"name": "pincode",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CC",
+				"type": "varchar"
+			},
+			{
+				"name": "salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "bankdata"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
